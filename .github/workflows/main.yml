@@ -3,7 +3,7 @@ name: CI
 on:
   workflow_dispatch:
   schedule:
-    - cron: "*/16 * * * *"
+    - cron: "*/17 * * * *"
 
 permissions:
   contents: read
@@ -30,7 +30,7 @@ jobs:
           path: |
             C:\9Hits\hits.zip
             C:\9Hits\9hits-app-state.zip
-          key: zips-v2
+          key: zips-v5
 
       # ⬇️ скачивание только при отсутствии
       - name: Download hits.zip if not cached
